@@ -1,1 +1,32 @@
-<p>home works!</p>
+<div class="container" style="width: 80%">
+  <form action="" [formGroup]="form" (ngSubmit)="print()">
+    <table class="table table-bordered">
+      <thead>
+      <tr class="text-center">
+        <th style="width: 10%">No.</th>
+        <th style="width: 50%">ACTIVIDAD</th>
+        <th style="width: 20%">Me interesa</th>
+        <th style="width: 20%">No me interesa</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let row of rows">
+        <td class="text-center">{{ row.id }}</td>
+        <td>{{ row.activity }}</td>
+        <td class="text-center">
+          <input class="form-check-input" type="radio" name="{{row.id}}" formControlName="{{row.id}}" id="interested"
+                 value="interested">
+        </td>
+        <td class="text-center">
+          <input class="form-check-input" type="radio" name="{{row.id}}" formControlName="{{row.id}}"
+                 id="notInterested" value="notInterested">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="col-12" style="text-align: right">
+      <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Enviar datos</button>
+    </div>
+  </form>
+</div>
+
