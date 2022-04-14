@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,9 @@ export class HomeComponent implements OnInit {
     activity: String,
   }];
 
-  constructor() { }
+  constructor(
+    private _router: Router,
+  ) { }
 
   form = new FormGroup({});
 
@@ -68,6 +71,7 @@ export class HomeComponent implements OnInit {
 
   print(){
     console.log(this.form.value);
+    this._router.navigate(['results']);
   }
 
 }
