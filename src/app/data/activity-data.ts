@@ -43,10 +43,10 @@ export const ACTIVITIES: Activity[] = [
   },
   {
     id: 11,
-    activity: 'Como estas'
+    activity: 'puto'
   },
   {
     id: 12,
-    activity: 'Bien y tu ?',
+    activity: 'frank',
   }
 ];
