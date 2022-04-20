@@ -8,13 +8,18 @@
             <div class="form-floating mb-3">
               <input type="email" class="form-control" id="name" formControlName="name" name="name"
                      placeholder="Nombre" required>
-              <label>Nombre</label>
+              <label>Nombre</label> 
             </div>
-            <div class="form-floating mb-3">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="lastname" formControlName="lastname" 
+                  placeholder="Apellido" required>
+                  <label>Apellido(s)</label>
+              </div>
+                <div class="form-floating mb-3">
               <input type="email" class="form-control" formControlName="email" name="email" id="email"
                      placeholder="email@ejemplo.com" required>
               <label>Email</label>
-            </div>
+                 </div>
             <hr class="my-4">
             <div class="d-grid">
               <button class="btn btn-primary btn-login text-uppercase fw-bold" [disabled]="!loginForm.valid"
