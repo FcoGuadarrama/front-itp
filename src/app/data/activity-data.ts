@@ -39,7 +39,7 @@ export const ACTIVITIES: Activity[] = [
   },
   {
     id: 10,
-    activity: 'Planificar cuáles son las metas deuna organización pública o privada a mediano y largo plazo',
+    activity: 'Planificar cuáles son las metas de una organización pública o privada a mediano y largo plazo',
   },
   {
     id: 11,
@@ -48,5 +48,9 @@ export const ACTIVITIES: Activity[] = [
   {
     id: 12,
     activity: 'alex',
+  },
+  {
+    id: 13,
+    activity: 'hola como estas'
   }
 ];
