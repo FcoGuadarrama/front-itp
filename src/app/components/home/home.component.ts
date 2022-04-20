@@ -62,7 +62,16 @@ export class HomeComponent implements OnInit {
       {
         id: 10,
         activity: 'Planificar cuáles son las metas deuna organización pública o privada a mediano y largo plazo',
+      },
+      {
+        id: 11,
+        activity: 'Ver peliculas'
+      },
+      {
+        id: 12,
+        activity: 'Programar',
       }
+
     ];
     for (let i = 1; i <= this.rows.length; i++){
       this.form.addControl(i.toString(), new FormControl('', Validators.required))
