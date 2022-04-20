@@ -9,6 +9,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResultsComponent } from './components/results/results.component';
+import {ActivityService} from "./services/activity.service";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { ResultsComponent } from './components/results/results.component';
         ReactiveFormsModule,
         BrowserAnimationsModule
     ],
-  providers: [],
+  providers: [
+    ActivityService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
