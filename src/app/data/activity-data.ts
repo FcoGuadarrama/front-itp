@@ -52,5 +52,9 @@ export const ACTIVITIES: Activity[] = [
   {
     id: 13,
     activity: 'hola como estas'
+  },
+  {
+    id: 14,
+    activity: 'bien y tu'
   }
 ];
