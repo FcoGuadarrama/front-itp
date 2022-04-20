@@ -47,6 +47,6 @@ export const ACTIVITIES: Activity[] = [
   },
   {
     id: 12,
-    activity: 'frank',
+    activity: 'alex',
   }
 ];
