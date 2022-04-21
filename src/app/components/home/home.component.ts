@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
 
     for (let i = 1; i <= this.rows.length; i++){
       this.form.addControl(i.toString(), new FormControl('', Validators.required))
-    }
+    } 
   }
 
   print(){
