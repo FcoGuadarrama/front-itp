@@ -10,7 +10,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let row of rows">
+      <tr *ngFor="let row of rows | paginator:page_size:page_number">
         <td class="text-center">{{ row.id }}</td>
         <td>{{ row.activity }}</td>
         <td class="text-center">
@@ -28,5 +28,13 @@
       <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Enviar datos</button>
     </div>
   </form>
+
+  <mat-paginator [length]="rows.length"
+                 [pageSize]="page_size"
+                 [pageSizeOptions]="[10, 25, 100]"
+                 aria-label="Select page"
+                 (page)="handlePage($event)">
+  </mat-paginator>
+
 </div>
 

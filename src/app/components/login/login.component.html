@@ -6,12 +6,12 @@
           <h5 class="card-title text-center mb-5 fw-light fs-5">Registrarse</h5>
           <form [formGroup]="loginForm" (ngSubmit)="getSignIn()">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="name" formControlName="name" name="name"
+              <input type="text" class="form-control" id="name" formControlName="name" name="name"
                      placeholder="Nombre" required>
-              <label>Nombre</label> 
+              <label>Nombre</label>
             </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="lastname" formControlName="lastname" 
+                <input type="text" class="form-control" id="lastname" formControlName="lastname"
                   placeholder="Apellido" required>
                   <label>Apellido(s)</label>
               </div>

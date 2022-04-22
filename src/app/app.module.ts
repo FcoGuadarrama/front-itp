@@ -10,6 +10,8 @@ import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResultsComponent } from './components/results/results.component';
 import {ActivityService} from "./services/activity.service";
+import { PaginatorPipePipe } from './pipes/paginator-pipe.pipe';
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import {ActivityService} from "./services/activity.service";
     HomeComponent,
     NavBarComponent,
     LoginComponent,
-    ResultsComponent
+    ResultsComponent,
+    PaginatorPipePipe
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        MatPaginatorModule
     ],
   providers: [
     ActivityService
