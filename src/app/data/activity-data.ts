@@ -4,321 +4,401 @@ export const ACTIVITIES: Activity[] = [
   {
     id: 1,
     activity: 'Diseñar programas de computación y explorar nuevas aplicaciones tecnológicas para uso del internet',
+    area: 1,
   },
   {
     id: 2,
     activity: 'Criar, cuidar y tratar animales domésticos y de campo',
+    area: 2,
   },
   {
     id: 3,
     activity: 'Investigar sobre áreas verdes, medio ambiente y cambios climáticos',
+    area: 2,
   },
   {
     id: 4,
     activity: 'Ilustrar, dibujar y animar digitalmente',
+    area: 2,
   },
   {
     id: 5,
     activity: 'Seleccionar, capacitar y motivar al personal de una organización/empresa',
+    area: 2,
   },
   {
     id: 6,
     activity: 'Realizar excavaciones para descubrir restos del pasado',
+    area: 2,
   },
   {
     id: 7,
     activity: 'Resolver problemas de cálculo para construir un puente',
+    area: 2,
   },
   {
     id: 8,
     activity: 'Diseñar cursos para enseñar a la gente sobre temas de salud e higiene',
+    area: 2,
   },
   {
     id: 9,
     activity: 'Tocar un instrumento y componer música',
+    area: 2,
   },
   {
     id: 10,
     activity: 'Planificar cuáles son las metas de una organización pública o privada a mediano y largo plazo',
+    area: 2,
   },
   {
     id: 11,
-    activity: 'Disenar y planificar la produccion masiva de articulos como muebles, autos, equipos de oficina, empaques y envases para alimento y otros.'
+    activity: 'Disenar y planificar la produccion masiva de articulos como muebles, autos, equipos de oficina, empaques y envases para alimento y otros.',
+    area: 2,
   },
   {
     id: 12,
     activity: 'Disenar logotipos y portadas de una revista',
+    area: 2,
   },
   {
     id: 13,
-    activity: 'Organizar eventos y atender a sus asistentes'
+    activity: 'Organizar eventos y atender a sus asistentes',
+    area: 2,
   },
   {
     id: 14,
-    activity: 'Atender la salud de personas enfermas'
+    activity: 'Atender la salud de personas enfermas',
+    area: 2,
   },
   {
     id: 15,
-    activity: 'Controlar ingresos y egresos de fondos y presentar el balance final de una institucion'
+    activity: 'Controlar ingresos y egresos de fondos y presentar el balance final de una institucion',
+    area: 2,
   },
   {
     id:16,
-    activity: 'Hacer experimentos con plantas (frutas, arboles, flores)'
+    activity: 'Hacer experimentos con plantas (frutas, arboles, flores)',
+    area: 2,
   },
   {
     id:17,
-    activity: 'Concebir planos para viviendas, edificios y ciudadelas'
+    activity: 'Concebir planos para viviendas, edificios y ciudadelas',
+    area: 2,
   },
   {
     id:18,
-    activity: 'Investigar y probar nuevos productos farmaceuticos'
+    activity: 'Investigar y probar nuevos productos farmaceuticos',
+    area: 2,
   },
   {
     id:19,
-    activity: 'Hacer propuestas y formular estrategias para aprovechar las relaciones economicas entre dos empresas'
+    activity: 'Hacer propuestas y formular estrategias para aprovechar las relaciones economicas entre dos empresas',
+    area: 2,
   },
   {
     id:20,
-    activity: ' Pintar, hacer esculturas, ilustrar libros de arte, etcétera.'
+    activity: ' Pintar, hacer esculturas, ilustrar libros de arte, etcétera.',
+    area: 2,
   },
   {
     id:21,
-    activity:'Elaborar campañas para introducir un nuevo producto al mercado.'
+    activity:'Elaborar campañas para introducir un nuevo producto al mercado.',
+    area: 2,
   },
   {
     id:22,
-    activity:'Examinar y tratar los problemas visuales.'
+    activity:'Examinar y tratar los problemas visuales.',
+    area: 2,
   },
   {
     id:23,
-    activity:'Defender a clientes individuales o empresas en juicios de diferente naturaleza.'
+    activity:'Defender a clientes individuales o empresas en juicios de diferente naturaleza.',
+    area: 2,
   },
   {
     id:24,
-    activity:'Diseñar maquinas que puedan simular actividades humanas.'
+    activity:'Diseñar maquinas que puedan simular actividades humanas.',
+    area: 2,
   },
   {
     id:25,
-    activity:'Investigar las causas y efectos de los transtornos emocionales.'
+    activity:'Investigar las causas y efectos de los transtornos emocionales.',
+    area: 2,
   },
   {
     id:26,
-    activity:'Supervisar las ventas de un centro comercial.'
+    activity:'Supervisar las ventas de un centro comercial.',
+    area: 2,
   },
   {
     id:27,
-    activity:'Atender y realizar ejercicios a personas que tienen limitaciones físicas, problemas de lenguaje, etcétera.'
+    activity:'Atender y realizar ejercicios a personas que tienen limitaciones físicas, problemas de lenguaje, etcétera.',
+    area: 2,
   },
   {
     id:28,
-    activity:'Prepararse para ser modelo profesional.'
+    activity:'Prepararse para ser modelo profesional.',
+    area: 2,
   },
   {
     id:29,
-    activity:'Aconsejar a las personas sobre planes de ahorro e inversiones.'
+    activity:'Aconsejar a las personas sobre planes de ahorro e inversiones.',
+    area: 2,
   },
   {
     id:30,
-    activity:'Elaborar mapas, planos e imagenes para el estudio y analisis de datos geograficos.'
+    activity:'Elaborar mapas, planos e imagenes para el estudio y analisis de datos geograficos.',
+    area: 2,
   },
   {
     id:31,
-    activity:'Diseñar juegos interactivos electronicos para computadora.'
+    activity:'Diseñar juegos interactivos electronicos para computadora.',
+    area: 2,
   },
   {
     id:32,
-    activity:'Realizar el control de calidad de los alimentos.'
+    activity:'Realizar el control de calidad de los alimentos.',
+    area: 2,
   },
   {
     id:33,
-    activity:'Tener un negocio propio de tipo comercial.'
+    activity:'Tener un negocio propio de tipo comercial.',
+    area: 2,
   },
   {
     id:34,
-    activity:'Escribir articulos periodisticos, cuentos, novelas y otros.'
+    activity:'Escribir articulos periodisticos, cuentos, novelas y otros.',
+    area: 2,
   },
   {
     id:35,
-    activity:'Redactar guiones y libretos para un programa de televisión.'
+    activity:'Redactar guiones y libretos para un programa de televisión.',
+    area: 2,
   },
   {
     id:36,
-    activity:'Organizar un plan de distribución y venta de un gran almacén.'
+    activity:'Organizar un plan de distribución y venta de un gran almacén.',
+    area: 2,
   },
   {
     id:37,
-    activity:'Estudiar la diversidad cultural en el ámbito rural y urbano.'
+    activity:'Estudiar la diversidad cultural en el ámbito rural y urbano.',
+    area: 2,
   },
   {
     id:38,
-    activity:'Gestionar y evaluar convenios internacionales de cooperación para el desarrollo social.'
+    activity:'Gestionar y evaluar convenios internacionales de cooperación para el desarrollo social.',
+    area: 2,
   },
   {
     id:39,
-    activity:'Crear campañas publicitarias.'
+    activity:'Crear campañas publicitarias.',
+    area: 2,
   },
   {
     id:40,
-    activity:'Trabajar investigando la reproducción de peces, camarones y otros animales marinos.'
+    activity:'Trabajar investigando la reproducción de peces, camarones y otros animales marinos.',
+    area: 2,
   },
   {
     id:41,
-    activity:'Dedicarse a fabricar productos alimencios de consumo masivo.'
+    activity:'Dedicarse a fabricar productos alimencios de consumo masivo.',
+    area: 2,
   },
   {
     id:42,
-    activity:'Gestionar y evaluar proyectos de desarrollo en una institucion educativa y/o fundación.'
+    activity:'Gestionar y evaluar proyectos de desarrollo en una institucion educativa y/o fundación.',
+    area: 2,
   },
   {
     id:43,
-    activity:'Rediseñar y decorar espacios físicos en viviendas, oficinas y locales comerciales.'
+    activity:'Rediseñar y decorar espacios físicos en viviendas, oficinas y locales comerciales.',
+    area: 2,
   },
   {
     id:44,
-    activity:'Administrar una empresa de turismo y/o agencias de viaje.'
+    activity:'Administrar una empresa de turismo y/o agencias de viaje.',
+    area: 2,
   },
   {
     id:45,
-    activity:'Aplicar metodos alternativos a la medicina tradicional para atender personas con dolencia de diversa índole.'
+    activity:'Aplicar metodos alternativos a la medicina tradicional para atender personas con dolencia de diversa índole.',
+    area: 2,
   },
   {
     id:46,
-    activity:'Diseñar ropa para niños, jovenes y adultos.'
+    activity:'Diseñar ropa para niños, jovenes y adultos.',
+    area: 2,
   },
   {
     id:47,
-    activity:'Investigar organismos vivos para elaborar vacunas.'
+    activity:'Investigar organismos vivos para elaborar vacunas.',
+    area: 2,
   },
   {
     id:48,
-    activity:'Manejar y/o dar mantenimiento a dispositivos/aparatos tecnológicos en aviones, barcos, radares, etcétera.'
+    activity:'Manejar y/o dar mantenimiento a dispositivos/aparatos tecnológicos en aviones, barcos, radares, etcétera.',
+    area: 2,
   },
   {
     id:49,
-    activity:'Estudiar idiomas extranjeros -actuales y antiguos- para hacer traducción.'
+    activity:'Estudiar idiomas extranjeros -actuales y antiguos- para hacer traducción.',
+    area: 2,
   },
   {
     id:50,
-    activity:'Restaurar piezas y obras de arte.'
+    activity:'Restaurar piezas y obras de arte.',
+    area: 2,
   },
   {
     id:51,
-    activity:'Revisar y dar mantenimiento a artefactos eléctricos, electrónicos y computadoras.'
+    activity:'Revisar y dar mantenimiento a artefactos eléctricos, electrónicos y computadoras.',
+    area: 2,
   },
   {
     id:52,
-    activity:'Enseñar a niños de 0 a 5 años.'
+    activity:'Enseñar a niños de 0 a 5 años.',
+    area: 2,
   },
   {
     id:53,
-    activity:'Investigar y/o sondear nuevos mercados.'
+    activity:'Investigar y/o sondear nuevos mercados.',
+    area: 2,
   },
   {
     id:54,
-    activity:'Atender la salud dental de las personas.'
+    activity:'Atender la salud dental de las personas.',
+    area: 2,
   },
   {
     id:55,
-    activity:'Tratar a niños, jovenes y adultos con problemas psicológicos.'
+    activity:'Tratar a niños, jovenes y adultos con problemas psicológicos.',
+    area: 2,
   },
   {
     id:56,
-    activity:'Crear estrategias de promoción y venta de nuevos productos ecuatorianos en el mercado internacional.'
+    activity:'Crear estrategias de promoción y venta de nuevos productos ecuatorianos en el mercado internacional.',
+    area: 2,
   },
   {
     id:57,
-    activity:'Planificar y recomendar dietas para personas diabéticas y/o con sobrepeso.'
+    activity:'Planificar y recomendar dietas para personas diabéticas y/o con sobrepeso.',
+    area: 2,
   },
   {
     id:58,
-    activity:'Trabajar en una empresa petrolera en un cargo técnico como control de la producción.'
+    activity:'Trabajar en una empresa petrolera en un cargo técnico como control de la producción.',
+    area: 2,
   },
   {
     id:59,
-    activity:'Administrar una empresa (familiar, privada o pública).'
+    activity:'Administrar una empresa (familiar, privada o pública).',
+    area: 2,
   },
   {
     id:60,
-    activity:'Tener un taller de reparación y mantenimiento de carros, tractores, etcétera.'
+    activity:'Tener un taller de reparación y mantenimiento de carros, tractores, etcétera.',
+    area: 2,
   },
   {
     id:61,
-    activity:'Ejecutar proyectos de extracción minera y metalúrgica.'
+    activity:'Ejecutar proyectos de extracción minera y metalúrgica.',
+    area: 2,
   },
   {
     id:62,
-    activity:'Asistir a directivos multinacionales con manejo de varios idiomas.'
+    activity:'Asistir a directivos multinacionales con manejo de varios idiomas.',
+    area: 2,
   },
   {
     id:63,
-    activity:'Diseñar programas educativos para niños con discapacidad.'
+    activity:'Diseñar programas educativos para niños con discapacidad.',
+    area: 2,
   },
   {
     id:64,
-    activity:'Aplicar conocimientos de estadística en investigaciones en diversas áreas(social, administrativa, salud, etcétera).'
+    activity:'Aplicar conocimientos de estadística en investigaciones en diversas áreas(social, administrativa, salud, etcétera).',
+    area: 2,
   },
   {
     id:65,
-    activity:'Fotografias hechos históricos, lugares significativos, rostros, paisajes para el área publicitaria, artística, periodistica y social.'
+    activity:'Fotografias hechos históricos, lugares significativos, rostros, paisajes para el área publicitaria, artística, periodistica y social.',
+    area: 2,
   },
   {
     id:66,
-    activity:'Trabajar en museos y bibliotecas nacionales e internacionales.'
+    activity:'Trabajar en museos y bibliotecas nacionales e internacionales.',
+    area: 2,
   },
   {
     id:67,
-    activity:'Ser parte de un grupo de teatro.'
+    activity:'Ser parte de un grupo de teatro.',
+    area: 2,
   },
   {
     id:68,
-    activity:'Producir cortometrajes, spots publicitarios, programas educativos, de ficción, etcétera.'
+    activity:'Producir cortometrajes, spots publicitarios, programas educativos, de ficción, etcétera.',
+    area: 2,
   },
   {
     id:69,
-    activity:'Estudiar la influencia entre las corrientes amrinas y el clima y sus consecuancias ecológicas.'
+    activity:'Estudiar la influencia entre las corrientes amrinas y el clima y sus consecuancias ecológicas.',
+    area: 2,
   },
   {
     id:70,
-    activity:'Conocer distintas religiones, su filosofia y transmitirlas a la comunidad en general.'
+    activity:'Conocer distintas religiones, su filosofia y transmitirlas a la comunidad en general.',
+    area: 2,
   },
   {
     id:71,
-    activity:'Asesorar a inversionistas en la compra de bienes/acciones en mercados nacionales e internacionales.'
+    activity:'Asesorar a inversionistas en la compra de bienes/acciones en mercados nacionales e internacionales.',
+    area: 2,
   },
   {
     id:72,
-    activity:'Estudiar grupos étnicos, sus costumbres, tradiciones, cultura y compartir sus vivencias.'
+    activity:'Estudiar grupos étnicos, sus costumbres, tradiciones, cultura y compartir sus vivencias.',
+    area: 2,
   },
   {
     id:73,
-    activity:'Explorar el espacio sideral, los planetas, caracteristicas y componentes.'
+    activity:'Explorar el espacio sideral, los planetas, caracteristicas y componentes.',
+    area: 2,
   },
   {
     id:74,
-    activity:'Mejorar la imagen facial y corporal de las personas aplicando diferentes técnicas.'
+    activity:'Mejorar la imagen facial y corporal de las personas aplicando diferentes técnicas.',
+    area: 2,
   },
   {
     id:75,
-    activity:'Decorar jardines de casas y parques públicos.'
+    activity:'Decorar jardines de casas y parques públicos.',
+    area: 2,
   },
   {
     id:76,
-    activity:'Administrar y renovar menúes de comidas en un hotel o restaurante.'
+    activity:'Administrar y renovar menúes de comidas en un hotel o restaurante.',
+    area: 2,
   },
   {
     id:77,
-    activity:'Trabajar como presentador de televisión, locutor de radio y televisión, animador de programas culturales y concursos.'
+    activity:'Trabajar como presentador de televisión, locutor de radio y televisión, animador de programas culturales y concursos.',
+    area: 2,
   },
   {
     id:78,
-    activity:'Diseñar y ejecutar programas de turismo.'
+    activity:'Diseñar y ejecutar programas de turismo.',
+    area: 2,
   },
   {
     id:79,
-    activity:'Administrar y ordenar (planificar) adecuadamente la ocupación del espacio físico de ciudades, países,etc.., utilizando imágenes de satélite, mapas.'
+    activity:'Administrar y ordenar (planificar) adecuadamente la ocupación del espacio físico de ciudades, países,etc.., utilizando imágenes de satélite, mapas.',
+    area: 2,
   },
   {
     id:80,
-    activity:'Organizar, planificar y administrar centros educativos.'
+    activity:'Organizar, planificar y administrar centros educativos.',
+    area: 2,
   }
-]; 
+];
