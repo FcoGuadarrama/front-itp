@@ -9,6 +9,7 @@ import {IsNotLogInService} from "../services/Middleware/is-not-log-in.service";
 import {IsLogInService} from "../services/Middleware/is-log-in.service";
 import {InicioComponent} from "./components/inicio/inicio.component";
 import {PageNotFoundComponent} from "./components/shared/page-not-found/page-not-found.component";
+import {SignUpComponent} from "./components/admin/sign-up/sign-up.component";
 
 const routes: Routes = [
   {
@@ -44,6 +45,11 @@ const routes: Routes = [
   {
     path: 'admin/panel',
     component: AdminPanelComponent,
+    canActivate: [IsLogInService]
+  },
+  {
+    path: 'admin/signup',
+    component: SignUpComponent,
     canActivate: [IsLogInService]
   },
   {

@@ -18,6 +18,7 @@ import {NgxSpinnerModule} from "ngx-spinner";
 import { AdminPanelComponent } from './components/admin/admin-panel/admin-panel.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
+import { SignUpComponent } from './components/admin/sign-up/sign-up.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { PageNotFoundComponent } from './components/shared/page-not-found/page-n
     AdminPanelComponent,
     InicioComponent,
     PageNotFoundComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
