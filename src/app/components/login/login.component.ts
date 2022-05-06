@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
+import {AuthenticationService} from "../../services/authentication.service";
+import {first} from "rxjs";
+import {NgxSpinnerService} from "ngx-spinner";
 
 @Component({
   selector: 'app-login',
@@ -9,22 +11,34 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-
-
-  constructor(  private _router: Router) { }
-
-  loginForm = new FormGroup({
-    name: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.email)
-  });
-
-  ngOnInit(): void {
+  public form = {
+    email: null,
+    password: null
   }
 
-  getSignIn(){
-    this._router.navigate(['home']);
-    console.log(this.loginForm.value);
+  public error = null;
 
+  constructor(private router: Router,
+              private authService: AuthenticationService,
+              private spinner: NgxSpinnerService,
+  ) { }
+
+  ngOnInit(): void {
+    this.spinner.hide();
+  }
+
+  onSubmit(){
+    this.spinner.show();
+    this.error = null;
+    return this.authService.login(this.form.email, this.form.password).pipe(first()).subscribe(
+      data => {
+        this.spinner.hide();
+       // this.router.navigate(['home'])
+      }, error => {
+        this.error = error.error;
+        this.spinner.hide();
+      }
+    );
   }
 
 }

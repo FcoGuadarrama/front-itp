@@ -5,13 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResultsComponent } from './components/results/results.component';
 import {ActivityService} from "./services/activity.service";
 import { PaginatorPipePipe } from './pipes/paginator-pipe.pipe';
 import {MatPaginatorModule} from "@angular/material/paginator";
+import { RegisterComponent } from './components/register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+import {NgxSpinnerModule} from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -20,15 +23,19 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     NavBarComponent,
     LoginComponent,
     ResultsComponent,
-    PaginatorPipePipe
+    PaginatorPipePipe,
+    RegisterComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        ReactiveFormsModule,
-        BrowserAnimationsModule,
-        MatPaginatorModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatPaginatorModule,
+    FormsModule,
+    HttpClientModule,
+    NgxSpinnerModule,
+  ],
   providers: [
     ActivityService
   ],
