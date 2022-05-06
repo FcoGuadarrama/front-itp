@@ -1,1 +1,46 @@
-<p>sign-up works!</p>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card border-0 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-5">
+            <h5 class="card-title text-center mb-5 fw-light fs-5">Registrarse</h5>
+            <form role="form" #signupForm=ngForm (ngSubmit)="onSubmit()" class="form-horizontal">
+              <div class="alert alert-danger text-center" [hidden]="!error">
+                {{ error }}
+              </div>
+              <div class="form-floating mb-3">
+                <input name="name" class="form-control" id="name" placeholder="name" type="text "
+                       [(ngModel)]="form.name" required>
+                <label for="name">Nombre completo:</label>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input name="email" class="form-control" id="email" placeholder="email" type="email "
+                       [(ngModel)]="form.email" required>
+                <label for="email">Correo:</label>
+              </div>
+  
+              <div class="form-floating mb-3">
+                <input name="password" class="form-control" id="password" placeholder="Contraseña" type="password"
+                       [(ngModel)]="form.password" required>
+                <label for="password">Contraseña:</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input name="password_confirmation" class="form-control" id="password_confirmation" placeholder="Contraseña" type="password"
+                       [(ngModel)]="form.password_confirmation" required>
+                <label for="password_confirmation">Confirmar Contraseña</label>
+              </div>
+  
+              <div class="form-floating mb-3 text-center">
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid">Registrarse</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

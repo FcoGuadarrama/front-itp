@@ -35,6 +35,11 @@ export class AuthenticationService {
       }));
   }
 
+  signup(user: any){
+    return this.http.post<any>(`${environment.apiUrl}signup`, user);
+
+  }
+
   logout() {
     localStorage.removeItem('user');
     this.userSubject.next(null);
