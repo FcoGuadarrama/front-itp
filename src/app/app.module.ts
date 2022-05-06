@@ -9,13 +9,14 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResultsComponent } from './components/results/results.component';
-import {ActivityService} from "./services/activity.service";
+import {ActivityService} from "../services/activity.service";
 import { PaginatorPipePipe } from './pipes/paginator-pipe.pipe';
 import {MatPaginatorModule} from "@angular/material/paginator";
 import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import {NgxSpinnerModule} from "ngx-spinner";
-
+import { AdminPanelComponent } from './components/admin/admin-panel/admin-panel.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,9 @@ import {NgxSpinnerModule} from "ngx-spinner";
     LoginComponent,
     ResultsComponent,
     PaginatorPipePipe,
-    RegisterComponent
+    RegisterComponent,
+    AdminPanelComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,

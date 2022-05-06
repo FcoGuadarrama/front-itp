@@ -22,7 +22,6 @@ export class RegisterComponent implements OnInit {
   getSignIn(){
     this._router.navigate(['home']);
     console.log(this.registerForm.value);
-
   }
 
 }

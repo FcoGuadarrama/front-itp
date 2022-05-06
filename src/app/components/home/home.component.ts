@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import {ActivityService} from "../../services/activity.service";
+import {ActivityService} from "../../../services/activity.service";
 import {PageEvent} from "@angular/material/paginator";
 
 @Component({

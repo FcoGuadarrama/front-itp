@@ -1,11 +1,10 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject, map, Observable} from "rxjs";
-import {User} from "../models/user.model";
+import {User} from "../app/models/user.model";
 import {Router} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
-import {environment} from "../../environments/environment";
-import {LoginResponse} from "../models/resposes/login.response";
-import {LoginComponent} from "../components/login/login.component";
+import {environment} from "../environments/environment";
+import {LoginResponse} from "../app/models/resposes/login.response";
 
 @Injectable({
   providedIn: 'root'
@@ -28,7 +27,11 @@ export class AuthenticationService {
   login(email: string, password: string) {
     return this.http.post<any>(`${environment.apiUrl}login`, {email, password})
       .pipe(map((response: LoginResponse) => {
-        console.log(response)
+        const user = response.user;
+        user.token = response.access_token;
+        localStorage.setItem('user', JSON.stringify(user));
+        this.userSubject.next(user);
+        return user;
       }));
   }
 

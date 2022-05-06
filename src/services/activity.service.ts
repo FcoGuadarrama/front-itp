@@ -1,5 +1,5 @@
-import { Activity } from "../models/activity";
-import { ACTIVITIES } from "../data/activity-data";
+import { Activity } from "../app/models/activity";
+import { ACTIVITIES } from "../app/data/activity-data";
 
 export class ActivityService {
 

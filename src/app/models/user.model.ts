@@ -5,5 +5,4 @@ export class User {
   email_verified_at: string;
   password: string;
   token: string;
-
 }
