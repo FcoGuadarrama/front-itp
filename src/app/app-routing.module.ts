@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "./components/home/home.component";
+import {TestComponent} from "./components/test/test.component";
 import {LoginComponent} from "./components/login/login.component";
 import {ResultsComponent} from "./components/results/results.component";
 import {RegisterComponent} from "./components/register/register.component";
@@ -8,16 +8,18 @@ import {AdminPanelComponent} from "./components/admin/admin-panel/admin-panel.co
 import {IsNotLogInService} from "../services/Middleware/is-not-log-in.service";
 import {IsLogInService} from "../services/Middleware/is-log-in.service";
 import {InicioComponent} from "./components/inicio/inicio.component";
+import {PageNotFoundComponent} from "./components/shared/page-not-found/page-not-found.component";
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/inicio',
+    redirectTo: 'inicio',
     pathMatch: 'full'
   },
   {
     path: 'inicio',
-    component:InicioComponent
+    component:InicioComponent,
+    canActivate: [IsNotLogInService]
   },
   {
     path: 'register',
@@ -30,8 +32,8 @@ const routes: Routes = [
     canActivate: [IsNotLogInService]
   },
   {
-    path: 'home',
-    component: HomeComponent,
+    path: 'test',
+    component: TestComponent,
     canActivate: [IsNotLogInService]
   },
   {
@@ -43,7 +45,12 @@ const routes: Routes = [
     path: 'admin/panel',
     component: AdminPanelComponent,
     canActivate: [IsLogInService]
-  }
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    component: PageNotFoundComponent
+  },
 
 ];
 

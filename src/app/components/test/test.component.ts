@@ -5,11 +5,11 @@ import {ActivityService} from "../../../services/activity.service";
 import {PageEvent} from "@angular/material/paginator";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class TestComponent implements OnInit {
 
 
   public rows: any = [];

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import { TestComponent } from './components/test/test.component';
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './components/login/login.component';
@@ -17,10 +17,11 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxSpinnerModule} from "ngx-spinner";
 import { AdminPanelComponent } from './components/admin/admin-panel/admin-panel.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    TestComponent,
     NavBarComponent,
     LoginComponent,
     ResultsComponent,
@@ -28,6 +29,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     RegisterComponent,
     AdminPanelComponent,
     InicioComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
