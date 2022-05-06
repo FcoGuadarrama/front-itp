@@ -8,12 +8,18 @@ import {AuthenticationService} from "../../../../services/authentication.service
 })
 export class AdminPanelComponent  implements OnInit {
 
+  user = JSON.parse(localStorage.getItem('user'));
+
   constructor(
     private authService: AuthenticationService,
   ) {
   }
 
   ngOnInit(): void {
+  }
+
+  hola(){
+    console.log(this.user);
   }
 
   logOut() {
