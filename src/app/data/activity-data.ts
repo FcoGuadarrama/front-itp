@@ -1,5 +1,18 @@
 import { Activity } from "../models/activity";
 
+
+/**
+ *
+ * area 1: arte y creatividad
+ * area 2: ciencias sociales
+ * area 3: economica administrativa y financiera
+ * area 4: ciencia y tecnologia
+ * area 5: ciencias ecologias biologicas y de salud
+ *
+ *
+ */
+
+
 export const ACTIVITIES: Activity[] = [
   {
     id: 1,

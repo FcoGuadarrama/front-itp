@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {ActivityService} from "../../../services/activity.service";
 import {PageEvent} from "@angular/material/paginator";
+import {HttpService} from "../../http.service";
 
 @Component({
   selector: 'app-test',
@@ -19,6 +20,7 @@ export class TestComponent implements OnInit {
   constructor(
     private _router: Router,
     private activityService: ActivityService,
+    private http: HttpService
   ) { }
 
   form = new FormGroup({});
@@ -38,8 +40,12 @@ export class TestComponent implements OnInit {
   }
 
   print(){
-    console.log(this.form.value);
-    this._router.navigate(['results']);
+   let array = Object.values(this.form.value).filter(obj => obj > 0);
+   this.http.sendData(Object.values(array)).subscribe(res => {
+       console.log(Object.values(res)[0]);
+   });
+  //  console.log(this.form.value);
+    //this._router.navigate(['results']);
   }
 
 }
