@@ -2,5 +2,24 @@
 
 <h1>hola {{ user.name }}</h1>
 
+<table class="table table-bordered">
+  <tr>
+    <th>id</th>
+    <th>nombre</th>
+    <th>email</th>
+    <th>resultados</th>
+  </tr>
+  <tr *ngFor="let aspirante of aspirantes">
+    <td>{{ aspirante.id }}</td>
+    <td>{{ aspirante.name}}</td>
+    <td>{{ aspirante.email }}</td>
+    <td>{{ aspirante.results }}</td>
+  </tr>
+</table>
+
+
+
+
 <button class="btn btn-lg btn-primary" (click)="logOut()">Cerrar Sesión</button>
+<a href="http://localhost:8000/api/exportar">Exportar a Excel</a>
 <a routerLink="/admin/signup" class="btn btn-lg btn-primary" >Registrarse</a>

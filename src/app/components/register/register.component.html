@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="!isRegistered">
   <div class="row">
     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
       <div class="card border-0 shadow rounded-3 my-5">
@@ -23,7 +23,7 @@
             <hr class="my-4 ">
             <div class="d-grid ">
               <button class="btn btn-primary btn-login text-uppercase fw-bold" [disabled]="!registerForm.valid"
-                      type="submit ">Entrar
+                      type="submit">Entrar
               </button>
             </div>
           </form>
@@ -32,4 +32,6 @@
     </div>
   </div>
 </div>
+
+<app-test *ngIf="isRegistered" [person]="registerForm.value"></app-test>
 

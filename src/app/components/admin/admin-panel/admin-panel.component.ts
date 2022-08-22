@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthenticationService} from "../../../../services/authentication.service";
+import {HttpService} from "../../../http.service";
 
 @Component({
   selector: 'app-admin-panel',
@@ -9,13 +10,20 @@ import {AuthenticationService} from "../../../../services/authentication.service
 export class AdminPanelComponent  implements OnInit {
 
   user = JSON.parse(localStorage.getItem('user'));
+  aspirantes: any;
 
   constructor(
     private authService: AuthenticationService,
+    private http: HttpService,
   ) {
   }
 
   ngOnInit(): void {
+    this.http.getAspirantes().subscribe(res => {
+      this.aspirantes = res;
+      console.log(res);
+    });
+
   }
 
   hola(){

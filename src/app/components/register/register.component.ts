@@ -9,8 +9,9 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private _router: Router) { }
+  isRegistered: boolean = false;
 
+  constructor(private _router: Router) { }
   registerForm = new FormGroup({
     name: new FormControl('', Validators.required),
     lastname: new FormControl('', Validators.required),
@@ -21,8 +22,7 @@ export class RegisterComponent implements OnInit {
   }
 
   getSignIn(){
-    this._router.navigate(['test']);
-    console.log(this.registerForm.value);
+    this.isRegistered = true;
   }
 
 }
