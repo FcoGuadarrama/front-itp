@@ -9,6 +9,7 @@
       </ul>
       <form class="d-flex">
         <a class="navbar-brand" aria-current="page" *ngIf="!loggedIn" routerLink="login">Iniciar Sesión</a>
+        <a class="navbar-brand" aria-current="page" *ngIf="loggedIn" (click)="logOut()">Cerrar Sesión</a>
       </form>
     </div>
   </div>

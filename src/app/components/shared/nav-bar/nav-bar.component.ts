@@ -17,4 +17,8 @@ export class NavBarComponent implements OnInit {
     return this.authService.userValue && this.authService.userValue.token;
   }
 
+  logOut() {
+    this.authService.logout();
+  }
+
 }

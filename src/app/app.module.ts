@@ -19,6 +19,20 @@ import { AdminPanelComponent } from './components/admin/admin-panel/admin-panel.
 import { InicioComponent } from './components/inicio/inicio.component';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 import { SignUpComponent } from './components/admin/sign-up/sign-up.component';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatDividerModule} from "@angular/material/divider";
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { DashComponent } from './dash/dash.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatTableModule} from "@angular/material/table";
+import {MatTabsModule} from "@angular/material/tabs";
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +46,8 @@ import { SignUpComponent } from './components/admin/sign-up/sign-up.component';
     InicioComponent,
     PageNotFoundComponent,
     SignUpComponent,
+    SidebarComponent,
+    DashComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +58,18 @@ import { SignUpComponent } from './components/admin/sign-up/sign-up.component';
     FormsModule,
     HttpClientModule,
     NgxSpinnerModule,
+    MatSidenavModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatDividerModule,
+    MatTableModule,
+    MatTabsModule
   ],
   providers: [
     ActivityService
