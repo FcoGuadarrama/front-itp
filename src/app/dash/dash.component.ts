@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
-import { map } from 'rxjs/operators';
-import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import {Component, ViewChild,} from '@angular/core';
 import {HttpService} from "../http.service";
 import {Aspirante} from "../models/aspirante";
+import { MatPaginator } from '@angular/material/paginator';
+import {MatTableDataSource} from "@angular/material/table";
+import {first} from "rxjs";
 
 @Component({
   selector: 'app-dash',
@@ -11,43 +12,25 @@ import {Aspirante} from "../models/aspirante";
 })
 export class DashComponent {
 
-  aspirantes: Aspirante;
+  dataSource: MatTableDataSource<Aspirante>;
   displayedColumns: string[] = ['id', 'name', 'email', 'results'];
-  dataSource: any;
+  results: Aspirante[];
 
 
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({matches}) => {
-      if (matches) {
-        return [
-          {title: 'Resultados', cols: 1, rows: 1},
-          {title: 'Card 2', cols: 1, rows: 1},
-          {title: 'Card 3', cols: 1, rows: 1},
-          {title: 'Card 4', cols: 1, rows: 1}
-        ];
-      }
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
-      return [
-        {title: 'Resultados', cols: 2, rows: 1},
-        {title: 'Card 2', cols: 1, rows: 1},
-        {title: 'Card 3', cols: 1, rows: 2},
-        {title: 'Card 4', cols: 1, rows: 1}
-      ];
-    })
-  );
+  aspirantes: Aspirante;
+  data: any;
 
-  constructor(private breakpointObserver: BreakpointObserver,
-              public http: HttpService) {
+  constructor(public http: HttpService) {
   }
 
   ngOnInit(): void {
-    this.http.getAspirantes().subscribe(res => {
-      this.dataSource = res;
+    this.http.getAspirantes().pipe(first()).subscribe((data: Aspirante[]) => {
+      this.dataSource = new MatTableDataSource<Aspirante>(data);
+      this.dataSource.paginator = this.paginator;
     });
   }
 
-  export(){
-    this.http.export();
-  }
 
 }
