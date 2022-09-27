@@ -43,8 +43,11 @@ export class DashComponent {
   ngOnInit(): void {
     this.http.getAspirantes().subscribe(res => {
       this.dataSource = res;
-      console.log(res);
     });
+  }
+
+  export(){
+    this.http.export();
   }
 
 }

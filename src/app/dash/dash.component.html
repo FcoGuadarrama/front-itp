@@ -52,7 +52,7 @@
             <mat-icon>more_vert</mat-icon>
           </button>
           <mat-menu #menu="matMenu" xPosition="before">
-            <a href="http://localhost:8000/api/exportar" mat-menu-item>Exportar a Excel</a>
+            <button class="link-dark" (click)="export()" mat-menu-item>Exportar a Excel</button>
           </mat-menu>
         </mat-card-title>
       </mat-card-header>

@@ -13,7 +13,7 @@ import {ActivityService} from "../services/activity.service";
 import { PaginatorPipePipe } from './pipes/paginator-pipe.pipe';
 import {MatPaginatorModule} from "@angular/material/paginator";
 import { RegisterComponent } from './components/register/register.component';
-import { HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {NgxSpinnerModule} from "ngx-spinner";
 import { AdminPanelComponent } from './components/admin/admin-panel/admin-panel.component';
 import { InicioComponent } from './components/inicio/inicio.component';
@@ -33,6 +33,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatTableModule} from "@angular/material/table";
 import {MatTabsModule} from "@angular/material/tabs";
+import {JWTInterceptor} from "./core/jwtinterceptor";
+import {ErrorInterceptor} from "./core/error-interceptor";
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +74,9 @@ import {MatTabsModule} from "@angular/material/tabs";
     MatTabsModule
   ],
   providers: [
-    ActivityService
+    ActivityService,
+    {provide: HTTP_INTERCEPTORS, useClass: JWTInterceptor, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
   ],
   bootstrap: [AppComponent]
 })

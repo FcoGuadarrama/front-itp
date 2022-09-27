@@ -42,12 +42,9 @@ export class TestComponent implements OnInit {
 
   print(){
    let array = Object.values(this.form.value).filter(obj => obj > 0);
-
    this.http.sendData(Object.values(array), this.person).subscribe(res => {
-     this._router.navigate(['results']);
+      this._router.navigate(['/results', res.area_id])
    });
-  //  console.log(this.form.value);
-
   }
 
 }

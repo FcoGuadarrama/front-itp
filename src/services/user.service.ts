@@ -35,7 +35,6 @@ export class UserService {
   }
 
   private payload(token: string): Payload {
-    console.log(token);
     const payload = token.split('.')[1];
     return this.decodePayload(payload);
   }

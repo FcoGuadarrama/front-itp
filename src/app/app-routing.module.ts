@@ -38,7 +38,7 @@ const routes: Routes = [
     canActivate: [IsNotLogInService]
   },
   {
-    path: 'results',
+    path: 'results/:area_id',
     component: ResultsComponent,
     canActivate: [IsNotLogInService]
   },
