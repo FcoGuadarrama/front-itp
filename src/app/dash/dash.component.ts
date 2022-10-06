@@ -4,6 +4,7 @@ import {Aspirante} from "../models/aspirante";
 import { MatPaginator } from '@angular/material/paginator';
 import {MatTableDataSource} from "@angular/material/table";
 import {first} from "rxjs";
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-dash',
@@ -13,8 +14,9 @@ import {first} from "rxjs";
 export class DashComponent {
 
   dataSource: MatTableDataSource<Aspirante>;
-  displayedColumns: string[] = ['id', 'name', 'email', 'results'];
+  displayedColumns: string[] = ['id', 'name', 'email', 'age',  'option',  'interestedCareer',  'originSchool', 'created_at'];
   results: Aspirante[];
+  apiUrl = environment.apiUrl;
 
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
