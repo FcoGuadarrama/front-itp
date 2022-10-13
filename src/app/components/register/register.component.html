@@ -34,7 +34,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12">
+              <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="form-floating mb-3">
                   <input type="email" class="form-control {{ email.invalid && (email.dirty || email.touched) ? 'error' : ''  }}"
                          formControlName="email" name="email" id="email"
@@ -46,6 +46,19 @@
                     </div>
                     <div *ngIf="email.errors?.['email']">
                       <span style="color: red">*El correo es incorrecto</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="form-floating mb-3">
+                  <select class="form-select  {{ college_area.invalid && (college_area.dirty || college_area.touched) ? 'error' : ''  }}" formControlName="college_area">
+                    <option [value]="item" *ngFor="let item of college_areas">{{ item }}</option>
+                  </select>
+                  <label>Área del Bachillerato:</label>
+                  <div *ngIf="college_area.invalid && (college_area.dirty || college_area.touched)">
+                    <div *ngIf="college_area.errors?.['required']">
+                      <span style="color: red">*El campo es requerido</span>
                     </div>
                   </div>
                 </div>

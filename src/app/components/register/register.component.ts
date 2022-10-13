@@ -23,6 +23,15 @@ export class RegisterComponent implements OnInit {
     "Otros"
   ];
 
+  college_areas: string[] = [
+    'Área I.Exactas,Físico-Matemático o Ingenierías',
+    'Área II.Ciencias biológicas-Química',
+    'Área III.Ciencias sociales',
+    'Área IV.Humanidades y Arte',
+    'Área V. Económico- Administrativa',
+    'Área VI. General'
+  ];
+
   constructor(private _router: Router) { }
   registerForm = new FormGroup({
     name: new FormControl('', Validators.required),
@@ -36,7 +45,7 @@ export class RegisterComponent implements OnInit {
     interestedCareer: new FormControl('', Validators.required),
     originSchool: new FormControl('', Validators.required),
     option: new FormControl('', Validators.required),
-
+    college_area: new FormControl('', Validators.required)
   });
 
   ngOnInit(): void {
@@ -52,5 +61,6 @@ export class RegisterComponent implements OnInit {
   get age() { return this.registerForm.get('age'); }
   get interestedCareer() { return this.registerForm.get('interestedCareer'); }
   get originSchool() { return this.registerForm.get('originSchool'); }
+  get college_area() { return this.registerForm.get('college_area'); }
 
 }

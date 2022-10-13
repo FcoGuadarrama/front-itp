@@ -14,7 +14,7 @@ import {environment} from "../../environments/environment";
 export class DashComponent {
 
   dataSource: MatTableDataSource<Aspirante>;
-  displayedColumns: string[] = ['id', 'name', 'email', 'age',  'option',  'interestedCareer',  'originSchool', 'created_at'];
+  displayedColumns: string[] = ['id', 'name', 'email', 'age',  'option',  'interestedCareer',  'originSchool', 'college_area', 'created_at'];
   results: Aspirante[];
   apiUrl = environment.apiUrl;
 

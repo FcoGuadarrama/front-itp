@@ -58,6 +58,12 @@
             </ng-container>
 
             <!-- Symbol Column -->
+            <ng-container matColumnDef="college_area">
+              <th mat-header-cell *matHeaderCellDef> Área del Bachilleratio </th>
+              <td mat-cell *matCellDef="let element"> {{element.college_area}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
             <ng-container matColumnDef="results">
               <th mat-header-cell *matHeaderCellDef> Resultados </th>
               <td mat-cell *matCellDef="let element"> {{element.results}} </td>
