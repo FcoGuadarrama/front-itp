@@ -91,7 +91,7 @@
                   <input type="text" class="form-control {{ originSchool.invalid && (originSchool.dirty || originSchool.touched) ? 'error' : ''  }}"
                          id="originSchool" formControlName="originSchool"
                          placeholder="Escuela de origen" required>
-                  <label>Escuela de origen</label>
+                  <label>Escuela de origen: </label>
                   <div *ngIf="originSchool.invalid && (originSchool.dirty || originSchool.touched)">
                     <div *ngIf="originSchool.errors?.['required']">
                       <span style="color: red">*El apellido es requerido</span>
