@@ -16,10 +16,10 @@ export class RegisterComponent implements OnInit {
     "Ingeniería Electrónica",
     "Ingeniería Eléctrica",
     "Ingeniería Mecánica",
-    "Ingeniería en Tecnologías de la información y comunicaciones",
-    "Ingeniería en logística",
-    "Ingeniería en gestión empresarial",
-    "Licenciatura en administración",
+    "Ingeniería en Tecnologías de la Información y Comunicaciones",
+    "Ingeniería en Logística",
+    "Ingeniería en Gestión empresarial",
+    "Licenciatura en Administración",
     "Otros"
   ];
 
