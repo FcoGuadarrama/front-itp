@@ -12,14 +12,14 @@ export class RegisterComponent implements OnInit {
   isRegistered: boolean = false;
 
   careers: string[] = [
-    "Ingeniería Industrial",
-    "Ingeniería Electrónica",
-    "Ingeniería Eléctrica",
-    "Ingeniería Mecánica",
+    "Ingeniería Industrial", 
+    "Ingeniería Electrónica", 
+    "Ingeniería Eléctrica", 
+    "Ingeniería Mecánica", 
     "Ingeniería en Tecnologías de la Información y Comunicaciones",
     "Ingeniería en Logística",
     "Ingeniería en Gestión empresarial",
-    "Licenciatura en Administración",
+    "Licenciatura en Administración", 
     "Otros"
   ];
 
