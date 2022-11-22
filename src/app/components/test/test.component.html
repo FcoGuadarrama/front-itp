@@ -1,11 +1,14 @@
 <div class="container" style="width: 80%">
-  <h1>Hola! {{ person.name }}</h1>
-  <h1>Test para la identificacion de interes vocacionales y profesionales.</h1>
-    <h4>INSTRUCCIONES: </h4>
-    <h4>1.- Lee atentamente cada una de las actividades. </h4>
-    <h4>2.- Marca solo una de las casillas de cada uno de los enunciados de las columnas "Me interesa" o "No me interesa" segun tu propia desicion.</h4>
-    <h4>3.- En general no existen respuestas correctas o incorrectas; lo importante es que contestes con sinceridad y confianza para que puedas conocer mejor tus intereses vocacionales.</h4>
-    <h4>4.- Asegurate de marcar <strong>TODOS</strong> y cada uno de los incisos.</h4>
+  <h1>Hola {{ person.name }} {{ person.lastname }} </h1>
+  <h1>Test para la identificación de intereses vocacionales y profesionales.</h1>
+    <h4><strong>Instrucciones</strong> </h4>
+    <p>1.- Lee atentamente cada una de las actividades. <br>
+       2.- Marca solo una de las casillas de cada uno de los enunciados de las columnas "Me interesa" o "No me interesa" según tu propia desición. <br>
+       3.- En general no existen respuestas correctas o incorrectas; lo importante es que contestes con sinceridad y confianza para que puedas conocer mejor tus intereses vocacionales. <br>
+       
+       
+
+    </p>
 
   <form action="" [formGroup]="form" (ngSubmit)="print()">
     <table class="table table-bordered">

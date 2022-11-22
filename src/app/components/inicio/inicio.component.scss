@@ -787,6 +787,18 @@ progress {
   width: 100%;
 }
 
+.logo{
+  background-image: url("../../../assets/img/itp-head-new.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 1400px;
+  background-position: center;
+  padding: 2rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .offset-1 {
   margin-left: 8.33333333%;
 }
